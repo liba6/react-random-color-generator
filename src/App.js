@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+//import './App.css';
+import style from './styles.css';
+import randomHex from 'random-hex';
 
-function App() {
+export default function App() {
+  const random = randomHex.generate();
+  const [color, setColor] = useState('');
+  // const [colorText, setColorText] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="items">
+      <h1> React Random Color Generator</h1>
+      <button
+        className="btn"
+        onClick={() => {
+          setColor(random);
+        }}
+      >
+        Generate
+      </button>
+      <div
+        style={{
+          backgroundColor: color,
+        }}
+      >
+        <h2 className="outputcolor"> Generated Color:{color}</h2>
+      </div>
     </div>
   );
 }
-
-export default App;
