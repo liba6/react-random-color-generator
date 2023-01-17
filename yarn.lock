@@ -7780,11 +7780,6 @@ raf@^3.4.1:
   dependencies:
     performance-now "^2.1.0"
 
-random-hex@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/random-hex/-/random-hex-1.0.2.tgz#17b5524413455ddb710c8c4846a11ab7195bf49f"
-  integrity sha512-MZa4hZIAFdVV/mzB1YZjdwrjzsjuYzR7gY1R9GDCQqGJYbbyQHp9+uS3T3vmhYM+GagELvufkE1eD0T1nSS1uQ==
-
 randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"

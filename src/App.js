@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import styles from './styles.css';
-import randomHex from 'random-hex';
+import './styles.css';
 import randomColor from 'randomcolor';
 
 export default function App() {
   const [color, setColor] = useState('');
   const [colorChosen, setColorChosen] = useState('');
-  const [lightChosen, setLightColor] = useState('');
+  const [lightChosen, setLightChosen] = useState('');
 
   return (
     <div className="items">
@@ -26,7 +24,7 @@ export default function App() {
           placeholder="Light or Dark?"
           value={lightChosen}
           onChange={(event) => {
-            setLightColor(event.currentTarget.value);
+            setLightChosen(event.currentTarget.value);
           }}
         />
       </h3>
