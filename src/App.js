@@ -45,9 +45,11 @@ export default function App() {
         style={{
           backgroundColor: color,
           borderRadius: '6px',
+          padding: '40px',
+          margin: '10px',
         }}
       >
-        <h2 className="outputcolor"> Generated Color:{color}</h2>
+        {`Generated Color: ${color}`}
       </div>
     </div>
   );
