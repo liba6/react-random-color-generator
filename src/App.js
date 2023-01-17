@@ -4,7 +4,7 @@ import randomColor from 'randomcolor';
 
 export default function App() {
   const [color, setColor] = useState('');
-  const [colorChosen, setColorChosen] = useState('red');
+  const [colorChosen, setColorChosen] = useState('');
   const [lightChosen, setLightChosen] = useState('');
 
   return (
