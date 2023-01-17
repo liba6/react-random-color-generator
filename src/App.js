@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-//import './App.css';
-import style from './styles.css';
+import styles from './styles.css';
 import randomHex from 'random-hex';
 import randomColor from 'randomcolor';
 
 export default function App() {
-  const random = randomHex.generate();
   const [color, setColor] = useState('');
   const [colorChosen, setColorChosen] = useState('');
   const [lightChosen, setLightColor] = useState('');
